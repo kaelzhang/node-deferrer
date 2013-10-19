@@ -23,6 +23,7 @@ Foo.prototype._b = function (args, done) {
 }
 
 Foo.prototype._done = function(err, callback){
+	callback(err);
 }
 
 var deferrer = require('deferrer');
