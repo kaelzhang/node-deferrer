@@ -1,6 +1,6 @@
 {
   "name": "deferrer",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Deferrer is a fast promise-object generator.",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,8 @@
   "devDependencies": {
     "mocha": "~1.13.0",
     "chai": "~1.8.0"
+  },
+  "dependencies": {
+    "async": "~0.2.9"
   }
 }
