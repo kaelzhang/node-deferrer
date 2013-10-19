@@ -2,7 +2,9 @@
 
 Deferrer is a fast promise-object generator.
 
-```
+## Exmaples
+
+```js
 function Foo (){}
 
 Foo.prototype._a = function (args, done) {
