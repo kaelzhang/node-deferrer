@@ -1,0 +1,28 @@
+{
+  "name": "deferrer",
+  "version": "0.1.0",
+  "description": "Deferrer is a fast promise-object generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kaelzhang/node-deferrer.git"
+  },
+  "keywords": [
+    "checker",
+    "validator",
+    "validate",
+    "setter"
+  ],
+  "author": "kael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaelzhang/node-deferrer/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.8.0"
+  }
+}
