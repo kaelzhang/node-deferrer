@@ -1,6 +1,4 @@
-# deferrer [![NPM version](https://badge.fury.io/js/checker.png)](http://badge.fury.io/js/deferrer)
-[![Build Status](https://travis-ci.org/kaelzhang/node-deferrer.png?branch=master)](https://travis-ci.org/kaelzhang/node-deferrer)
-[![Dependency Status](https://gemnasium.com/kaelzhang/node-deferrer.png)](https://gemnasium.com/kaelzhang/node-deferrer)
+# deferrer [![NPM version](https://badge.fury.io/js/checker.png)](http://badge.fury.io/js/deferrer) [![Build Status](https://travis-ci.org/kaelzhang/node-deferrer.png?branch=master)](https://travis-ci.org/kaelzhang/node-deferrer) [![Dependency Status](https://gemnasium.com/kaelzhang/node-deferrer.png)](https://gemnasium.com/kaelzhang/node-deferrer)
 
 Deferrer is a fast promise-object generator.
 
