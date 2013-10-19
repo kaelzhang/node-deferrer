@@ -38,7 +38,7 @@ function CHAIN () {
 Deferrer.prototype.promise = function(method_name, origin_name, options) {
     options = options || {};
 
-    var method = this._check_method(origin_name);
+    var method = this._check_method(origin_name, 'The second parameter of `promise`');
     var props = {};
 
     props[method_name] = {
@@ -109,7 +109,7 @@ Deferrer.prototype._check_method = function(method, message_slice) {
 
 // @param {Object} done done logic
 Deferrer.prototype.done = function(done) {
-    done = this._check_method(done);
+    done = this._check_method(done, '`done`');
 
     var self = this;
 
