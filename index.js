@@ -108,21 +108,25 @@ Deferrer.prototype._check_method = function(method, message_slice) {
 
 
 // @param {Object} done done logic
-Deferrer.prototype.done = function(done) {
+Deferrer.prototype.done = function(name, done) {
+    if ( arguments.length === 1 ) {
+        done = name;
+        name = 'done';
+    }
+
     done = this._check_method(done, '`done`');
 
     var self = this;
-
-    var props = {
-        done: {
-            // @param {Object} callback user callback
-            value: function (callback) {
-                var sub_self = this;
-                self._run_async(this._deferred_queue, this, function(err){
-                    sub_self._deferred_queue.length = 0;
-                    self._run_method(done, sub_self, err, callback);
-                });
-            }
+    var props = {};
+    
+    props[name] = {
+        // @param {Object} callback user callback
+        value: function (callback) {
+            var sub_self = this;
+            self._run_async(this._deferred_queue, this, function(err){
+                sub_self._deferred_queue.length = 0;
+                self._run_method(done, sub_self, err, callback);
+            });
         }
     };
 
